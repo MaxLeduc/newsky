@@ -5,7 +5,14 @@
  * @format
  */
 
+const path = require('path');
+
 module.exports = {
+  projectRoot: path.resolve(__dirname, './android'),
+  watchFolders: [
+    path.resolve(__dirname),
+    path.resolve(__dirname, './node_modules'),
+  ],
   transformer: {
     getTransformOptions: async () => ({
       transform: {
