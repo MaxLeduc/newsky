@@ -1,13 +1,15 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View} from 'react-native';
 
-import {TestComponent} from '@newsky/components/TestComponent';
+import {NewsProvider} from '@newsky/data/news';
+import {ArticlesContainer} from '@newsky/modules/ArticleContainer';
 
 const App = () => {
   return (
     <View>
-      <Text>Hello World.</Text>
-      <TestComponent />
+      <NewsProvider>
+        <ArticlesContainer />
+      </NewsProvider>
     </View>
   );
 };
