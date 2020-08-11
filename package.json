@@ -27,6 +27,7 @@
     "@types/react-test-renderer": "^16.9.3",
     "babel-jest": "^25.1.0",
     "babel-loader": "^8.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
     "babel-plugin-react-native-web": "^0.13.5",
     "eslint": "^6.5.1",
     "html-webpack-plugin": "^4.3.0",
