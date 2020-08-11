@@ -15,13 +15,24 @@ const babelLoaderConfiguration = {
     path.resolve(__dirname, 'index.js'),
     path.resolve(__dirname, 'src/App.tsx'),
     path.resolve(__dirname, 'src'),
+    path.resolve(__dirname, '../global'),
   ],
   use: {
     loader: 'babel-loader',
     options: {
       cacheDirectory: true,
       presets,
-      plugins: ['react-native-web'],
+      plugins: [
+        'react-native-web',
+        [
+          'module-resolver',
+          {
+            alias: {
+              '@newsky': './global',
+            },
+          },
+        ],
+      ],
     },
   },
 };
