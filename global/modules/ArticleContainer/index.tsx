@@ -1,18 +1,24 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {Dimensions} from 'react-native';
 
 import {useNewsContext, Article} from '@newsky/data/news';
+import {ArticleCard} from '@newsky/components/ArticleCard';
+import {isMobile} from '@newsky/utilities';
+
+import {Container} from './styled';
 
 export const ArticlesContainer = () => {
   const news = useNewsContext();
 
   if (news) {
     return (
-      <View>
+      <Container isMobile={isMobile()}>
         {news.results.map((item: Article, key: number) => {
-          return <Text key={`${item.created_date}-${key}`}>{item.title}</Text>;
+          return (
+            <ArticleCard article={item} key={`${item.created_date}-${key}`} />
+          );
         })}
-      </View>
+      </Container>
     );
   }
 

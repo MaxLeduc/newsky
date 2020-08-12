@@ -1,3 +1,10 @@
+export interface Media {
+  url: string;
+  format: string;
+  height: number;
+  width: number;
+}
+
 export interface Article {
   abstract: string;
   byline: string;
@@ -7,6 +14,7 @@ export interface Article {
   subsection: string;
   title: string;
   created_date: string;
+  multimedia: Media[];
 }
 
 export interface NewsPayload {
