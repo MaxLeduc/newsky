@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {useNewsContext, Article} from '@newsky/data/news';
-import {ArticleCard} from '@newsky/components/ArticleCard';
+import {ArticleCard} from './ArticleCard';
 import {isMobile} from '@newsky/utilities';
 
 import {WebContainer} from './styled';

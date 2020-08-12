@@ -4,4 +4,5 @@ module.exports = {
       sourceDir: './native/android/',
     },
   },
+  assets: ['./native/assets/fonts'],
 };

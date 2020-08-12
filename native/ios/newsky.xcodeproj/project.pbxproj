@@ -20,6 +20,26 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		83EAEFEEE9985EE7B859A78F /* libPods-newsky.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87CA4E5DBE4F8E9AE7D789F6 /* libPods-newsky.a */; };
 		D10198379C0933B2BAF40AA6 /* libPods-newsky-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25EBEA9A8C95CA6D2588DD57 /* libPods-newsky-tvOS.a */; };
+		544D2823D13D4F8793C45009 /* CormorantGaramond-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1EC666F933084B4EA9951850 /* CormorantGaramond-Bold.ttf */; };
+		DB217861846842129731629A /* CormorantGaramond-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E15D3A519DA24DB59D6ED242 /* CormorantGaramond-BoldItalic.ttf */; };
+		17AAD6BA42E44D3AA630AEE0 /* CormorantGaramond-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3CA85CF9E1274BE991AB5723 /* CormorantGaramond-Italic.ttf */; };
+		F38265E2DB584A46AE159622 /* CormorantGaramond-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385F9171D48A4E6D872ABFF6 /* CormorantGaramond-Light.ttf */; };
+		01AB60568CBF4242A4680E97 /* CormorantGaramond-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13F46E58432148FCAF4ADC7C /* CormorantGaramond-LightItalic.ttf */; };
+		6D0356EB0FC9402CA7F746D6 /* CormorantGaramond-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5417E214DEA43D1B2A6A9EB /* CormorantGaramond-Medium.ttf */; };
+		4E308E52204C48C28C6C8E04 /* CormorantGaramond-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E1B3CCCD93548CE9096A66D /* CormorantGaramond-MediumItalic.ttf */; };
+		9313D839E1994CD882D1D2DF /* CormorantGaramond-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2C668EAEA7C49A1B784B96D /* CormorantGaramond-Regular.ttf */; };
+		572D5802BB744B838560070F /* CormorantGaramond-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21752E37CE4D4187BAA53761 /* CormorantGaramond-SemiBold.ttf */; };
+		FA262147975844078C9D1383 /* CormorantGaramond-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBFBA7EE912F45DE99F6EF83 /* CormorantGaramond-SemiBoldItalic.ttf */; };
+		5CBC55B33449407F870255C5 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DF5E8D596704F8991AC6270 /* Lato-Black.ttf */; };
+		DF4FE76B962C494DB8577621 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD42AEFD1FD34F25919F6AD0 /* Lato-BlackItalic.ttf */; };
+		C4F46F3F46C5446E815B17BA /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0AE7DACD90047DEA0847DE4 /* Lato-Bold.ttf */; };
+		EA94BE333FD8483599559A28 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 839FC89FBDC14B4A9EA37259 /* Lato-BoldItalic.ttf */; };
+		CC6041974DB5474A99B098E9 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E38F2E230EF64C5C98DB4D12 /* Lato-Italic.ttf */; };
+		871654508BC84859A79ED7AD /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC65AC0155C2438FA92248DA /* Lato-Light.ttf */; };
+		B500EC3BE536435F92741D4D /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C5AFF137E314CD389A672EB /* Lato-LightItalic.ttf */; };
+		BB9B62C88C014BB38517AA5E /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6108D8D90F7D46489EA0D944 /* Lato-Regular.ttf */; };
+		8048A5BE293641D9AE5D3808 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F0318D04B3D4D119BE71900 /* Lato-Thin.ttf */; };
+		12A3A839EFC34E94B4155019 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E81EB933D74E44AE8AA390B9 /* Lato-ThinItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +87,26 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F4C362C622D8F33711F549B3 /* Pods-newsky-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsky-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-newsky-tvOS/Pods-newsky-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		1EC666F933084B4EA9951850 /* CormorantGaramond-Bold.ttf */ = {isa = PBXFileReference; name = "CormorantGaramond-Bold.ttf"; path = "../../assets/fonts/CormorantGaramond-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E15D3A519DA24DB59D6ED242 /* CormorantGaramond-BoldItalic.ttf */ = {isa = PBXFileReference; name = "CormorantGaramond-BoldItalic.ttf"; path = "../../assets/fonts/CormorantGaramond-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3CA85CF9E1274BE991AB5723 /* CormorantGaramond-Italic.ttf */ = {isa = PBXFileReference; name = "CormorantGaramond-Italic.ttf"; path = "../../assets/fonts/CormorantGaramond-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		385F9171D48A4E6D872ABFF6 /* CormorantGaramond-Light.ttf */ = {isa = PBXFileReference; name = "CormorantGaramond-Light.ttf"; path = "../../assets/fonts/CormorantGaramond-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		13F46E58432148FCAF4ADC7C /* CormorantGaramond-LightItalic.ttf */ = {isa = PBXFileReference; name = "CormorantGaramond-LightItalic.ttf"; path = "../../assets/fonts/CormorantGaramond-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E5417E214DEA43D1B2A6A9EB /* CormorantGaramond-Medium.ttf */ = {isa = PBXFileReference; name = "CormorantGaramond-Medium.ttf"; path = "../../assets/fonts/CormorantGaramond-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9E1B3CCCD93548CE9096A66D /* CormorantGaramond-MediumItalic.ttf */ = {isa = PBXFileReference; name = "CormorantGaramond-MediumItalic.ttf"; path = "../../assets/fonts/CormorantGaramond-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D2C668EAEA7C49A1B784B96D /* CormorantGaramond-Regular.ttf */ = {isa = PBXFileReference; name = "CormorantGaramond-Regular.ttf"; path = "../../assets/fonts/CormorantGaramond-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		21752E37CE4D4187BAA53761 /* CormorantGaramond-SemiBold.ttf */ = {isa = PBXFileReference; name = "CormorantGaramond-SemiBold.ttf"; path = "../../assets/fonts/CormorantGaramond-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FBFBA7EE912F45DE99F6EF83 /* CormorantGaramond-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "CormorantGaramond-SemiBoldItalic.ttf"; path = "../../assets/fonts/CormorantGaramond-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8DF5E8D596704F8991AC6270 /* Lato-Black.ttf */ = {isa = PBXFileReference; name = "Lato-Black.ttf"; path = "../../assets/fonts/Lato-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BD42AEFD1FD34F25919F6AD0 /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Lato-BlackItalic.ttf"; path = "../../assets/fonts/Lato-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F0AE7DACD90047DEA0847DE4 /* Lato-Bold.ttf */ = {isa = PBXFileReference; name = "Lato-Bold.ttf"; path = "../../assets/fonts/Lato-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		839FC89FBDC14B4A9EA37259 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Lato-BoldItalic.ttf"; path = "../../assets/fonts/Lato-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E38F2E230EF64C5C98DB4D12 /* Lato-Italic.ttf */ = {isa = PBXFileReference; name = "Lato-Italic.ttf"; path = "../../assets/fonts/Lato-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EC65AC0155C2438FA92248DA /* Lato-Light.ttf */ = {isa = PBXFileReference; name = "Lato-Light.ttf"; path = "../../assets/fonts/Lato-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8C5AFF137E314CD389A672EB /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; name = "Lato-LightItalic.ttf"; path = "../../assets/fonts/Lato-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6108D8D90F7D46489EA0D944 /* Lato-Regular.ttf */ = {isa = PBXFileReference; name = "Lato-Regular.ttf"; path = "../../assets/fonts/Lato-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8F0318D04B3D4D119BE71900 /* Lato-Thin.ttf */ = {isa = PBXFileReference; name = "Lato-Thin.ttf"; path = "../../assets/fonts/Lato-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E81EB933D74E44AE8AA390B9 /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; name = "Lato-ThinItalic.ttf"; path = "../../assets/fonts/Lato-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +221,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				2BA01652C4851CB19A572A6A /* Pods */,
+				DD377FAE167445A9962DC3E3 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -197,6 +238,34 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		DD377FAE167445A9962DC3E3 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				1EC666F933084B4EA9951850 /* CormorantGaramond-Bold.ttf */,
+				E15D3A519DA24DB59D6ED242 /* CormorantGaramond-BoldItalic.ttf */,
+				3CA85CF9E1274BE991AB5723 /* CormorantGaramond-Italic.ttf */,
+				385F9171D48A4E6D872ABFF6 /* CormorantGaramond-Light.ttf */,
+				13F46E58432148FCAF4ADC7C /* CormorantGaramond-LightItalic.ttf */,
+				E5417E214DEA43D1B2A6A9EB /* CormorantGaramond-Medium.ttf */,
+				9E1B3CCCD93548CE9096A66D /* CormorantGaramond-MediumItalic.ttf */,
+				D2C668EAEA7C49A1B784B96D /* CormorantGaramond-Regular.ttf */,
+				21752E37CE4D4187BAA53761 /* CormorantGaramond-SemiBold.ttf */,
+				FBFBA7EE912F45DE99F6EF83 /* CormorantGaramond-SemiBoldItalic.ttf */,
+				8DF5E8D596704F8991AC6270 /* Lato-Black.ttf */,
+				BD42AEFD1FD34F25919F6AD0 /* Lato-BlackItalic.ttf */,
+				F0AE7DACD90047DEA0847DE4 /* Lato-Bold.ttf */,
+				839FC89FBDC14B4A9EA37259 /* Lato-BoldItalic.ttf */,
+				E38F2E230EF64C5C98DB4D12 /* Lato-Italic.ttf */,
+				EC65AC0155C2438FA92248DA /* Lato-Light.ttf */,
+				8C5AFF137E314CD389A672EB /* Lato-LightItalic.ttf */,
+				6108D8D90F7D46489EA0D944 /* Lato-Regular.ttf */,
+				8F0318D04B3D4D119BE71900 /* Lato-Thin.ttf */,
+				E81EB933D74E44AE8AA390B9 /* Lato-ThinItalic.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -342,6 +411,26 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				544D2823D13D4F8793C45009 /* CormorantGaramond-Bold.ttf in Resources */,
+				DB217861846842129731629A /* CormorantGaramond-BoldItalic.ttf in Resources */,
+				17AAD6BA42E44D3AA630AEE0 /* CormorantGaramond-Italic.ttf in Resources */,
+				F38265E2DB584A46AE159622 /* CormorantGaramond-Light.ttf in Resources */,
+				01AB60568CBF4242A4680E97 /* CormorantGaramond-LightItalic.ttf in Resources */,
+				6D0356EB0FC9402CA7F746D6 /* CormorantGaramond-Medium.ttf in Resources */,
+				4E308E52204C48C28C6C8E04 /* CormorantGaramond-MediumItalic.ttf in Resources */,
+				9313D839E1994CD882D1D2DF /* CormorantGaramond-Regular.ttf in Resources */,
+				572D5802BB744B838560070F /* CormorantGaramond-SemiBold.ttf in Resources */,
+				FA262147975844078C9D1383 /* CormorantGaramond-SemiBoldItalic.ttf in Resources */,
+				5CBC55B33449407F870255C5 /* Lato-Black.ttf in Resources */,
+				DF4FE76B962C494DB8577621 /* Lato-BlackItalic.ttf in Resources */,
+				C4F46F3F46C5446E815B17BA /* Lato-Bold.ttf in Resources */,
+				EA94BE333FD8483599559A28 /* Lato-BoldItalic.ttf in Resources */,
+				CC6041974DB5474A99B098E9 /* Lato-Italic.ttf in Resources */,
+				871654508BC84859A79ED7AD /* Lato-Light.ttf in Resources */,
+				B500EC3BE536435F92741D4D /* Lato-LightItalic.ttf in Resources */,
+				BB9B62C88C014BB38517AA5E /* Lato-Regular.ttf in Resources */,
+				8048A5BE293641D9AE5D3808 /* Lato-Thin.ttf in Resources */,
+				12A3A839EFC34E94B4155019 /* Lato-ThinItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

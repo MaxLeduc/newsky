@@ -31,14 +31,15 @@ export const ArticleCard = ({article}: prop) => {
       <ImageContainer>
         <StyledImage source={{uri: url}} />
         <SectionBackground />
-        <SectionText>{section.toUpperCase()}</SectionText>
+        <SectionText text={section.toUpperCase()} />
       </ImageContainer>
       <MainContentContainer>
-        <StyledDate>
-          {format(new Date(published_date), 'MMMM do, yyyy')}
-        </StyledDate>
-        <Title>{title}</Title>
-        {Boolean(abstract) && <Abstract>{abstract}</Abstract>}
+        <StyledDate
+          text={format(new Date(published_date), 'MMMM do, yyyy')}
+          isHeader
+        />
+        <Title text={title} isHeader />
+        {Boolean(abstract) && <Abstract text={abstract} />}
       </MainContentContainer>
     </ArticleContainer>
   );

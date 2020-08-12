@@ -16,4 +16,5 @@ export const Title = styled(Text)`
   color: white;
   font-weight: bold;
   font-style: italic;
+  font-family: 'Cormorant Garamond';
 `;
