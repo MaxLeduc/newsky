@@ -1,4 +1,4 @@
-import {View, Text, Image} from 'react-native';
+import {View, Text, Image, Platform} from 'react-native';
 import Styled from 'styled-components/native';
 
 interface ArticleContainerProps {
@@ -6,9 +6,8 @@ interface ArticleContainerProps {
 }
 
 export const ArticleContainer = Styled(View)<ArticleContainerProps>`
-  margin-top: 7px;
-  margin-bottom: 8px;
-  background-color: #fafafa;
+  margin-bottom: 30px;
+  background-color: #f8f8f8;
   border-radius: 3px;
 
   ${({isMobile}) =>
@@ -16,6 +15,8 @@ export const ArticleContainer = Styled(View)<ArticleContainerProps>`
     `
     max-width: 300px;
   `}
+
+  ${Platform.OS === 'web' && 'box-shadow: 1px 1px 4px #e0e0e0;'}
 `;
 
 export const ImageContainer = Styled(View)`
@@ -27,7 +28,7 @@ export const ImageContainer = Styled(View)`
 export const StyledImage = Styled(Image)`
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-  height: 175px;
+  height: ${Platform.OS === 'web' ? '175px' : '250px'};
   width: 100%;
 `;
 
@@ -54,10 +55,10 @@ ${sectionSharedStyles}
 `;
 
 export const MainContentContainer = Styled(View)`
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 20px;
 `;
 
 export const StyledDate = Styled(Text)`

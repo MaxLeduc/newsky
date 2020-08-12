@@ -12,6 +12,7 @@ const getMobileList = (news: NewsPayload) => {
     <ArticleCard article={item} />
   );
 
+  // todo: might have to move the `SafeAreaView` higher
   return (
     <StyledSafeAreaView>
       <FlatList

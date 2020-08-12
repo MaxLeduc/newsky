@@ -1,4 +1,4 @@
-import {View, SafeAreaView, StatusBar} from 'react-native';
+import {View, SafeAreaView} from 'react-native';
 import Styled from 'styled-components/native';
 
 interface ContainerProps {
@@ -18,10 +18,10 @@ export const WebContainer = Styled(View)<ContainerProps>`
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
+    align-items: stretch;
   `}
 `;
 
 export const StyledSafeAreaView = Styled(SafeAreaView)`
   align-items: center;
-  marginTop: ${StatusBar.currentHeight || 0}px;
 `;
