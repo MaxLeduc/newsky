@@ -28,7 +28,7 @@ export const ImageContainer = Styled(View)`
 export const StyledImage = Styled(Image)`
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-  height: ${Platform.OS === 'web' ? '175px' : '250px'};
+  height: ${Platform.OS === 'web' ? '200px' : '250px'};
   width: 100%;
 `;
 
