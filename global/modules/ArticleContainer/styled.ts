@@ -2,18 +2,17 @@ import {View} from 'react-native';
 import Styled from 'styled-components/native';
 
 interface ContainerProps {
-  windowWidth: number;
+  isMobile: boolean;
 }
 
-// todo: make the sizes constants
 export const Container = Styled(View)<ContainerProps>`
   margin-left: 5%;
   margin-right: 5%;
   display: flex;
   align-items: center;
 
-  ${({windowWidth}) =>
-    windowWidth > 600 &&
+  ${({isMobile}) =>
+    !isMobile &&
     `
     flex-direction: row;
     flex-wrap: wrap;
