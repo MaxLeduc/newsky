@@ -1,5 +1,7 @@
-import {View, Text, Image, Platform} from 'react-native';
+import {View, Image, Platform} from 'react-native';
 import styled from 'styled-components/native';
+
+import {Text} from '@newsky/components/Text';
 
 interface ArticleContainerProps {
   isMobile: boolean;
@@ -75,4 +77,6 @@ export const Title = styled(Text)`
 export const Abstract = styled(Text)`
   font-size: 17px;
   font-style: italic;
+  font-weight: 300;
+  color: #585858;
 `;

@@ -2,7 +2,7 @@ import React from 'react';
 import {FlatList} from 'react-native';
 
 import {useNewsContext, Article} from '@newsky/data/news';
-import {ArticleCard} from '@newsky/components/ArticleCard';
+import {ArticleCard} from './ArticleCard';
 
 import {StyledSafeAreaView} from './styled';
 
