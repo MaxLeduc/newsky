@@ -10,8 +10,6 @@ import {Container} from './styled';
 export const ArticlesContainer = () => {
   const news = useNewsContext();
 
-  console.log(isMobile());
-
   if (news) {
     return (
       <Container isMobile={isMobile()}>
