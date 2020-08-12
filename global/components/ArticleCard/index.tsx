@@ -3,6 +3,7 @@ import find from 'lodash/find';
 import {format} from 'date-fns';
 
 import {Article} from '@newsky/data/news';
+import {isMobile} from '@newsky/utilities';
 
 import {
   ArticleContainer,
@@ -26,7 +27,7 @@ export const ArticleCard = ({article}: prop) => {
 
   // todo: add some linking to the article.
   return (
-    <ArticleContainer>
+    <ArticleContainer isMobile={isMobile()}>
       <ImageContainer>
         <StyledImage source={{uri: url}} />
         <SectionBackground />

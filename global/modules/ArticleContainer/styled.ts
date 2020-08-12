@@ -1,11 +1,11 @@
-import {View} from 'react-native';
+import {View, SafeAreaView} from 'react-native';
 import Styled from 'styled-components/native';
 
 interface ContainerProps {
   isMobile: boolean;
 }
 
-export const Container = Styled(View)<ContainerProps>`
+export const WebContainer = Styled(View)<ContainerProps>`
   margin-left: 5%;
   margin-right: 5%;
   display: flex;
@@ -18,5 +18,10 @@ export const Container = Styled(View)<ContainerProps>`
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
+    align-items: stretch;
   `}
+`;
+
+export const StyledSafeAreaView = Styled(SafeAreaView)`
+  align-items: center;
 `;

@@ -1,26 +1,26 @@
 import React from 'react';
-import {Dimensions} from 'react-native';
 
 import {useNewsContext, Article} from '@newsky/data/news';
 import {ArticleCard} from '@newsky/components/ArticleCard';
 import {isMobile} from '@newsky/utilities';
 
-import {Container} from './styled';
+import {WebContainer} from './styled';
 
 export const ArticlesContainer = () => {
   const news = useNewsContext();
 
   if (news) {
     return (
-      <Container isMobile={isMobile()}>
+      <WebContainer isMobile={isMobile()}>
         {news.results.map((item: Article, key: number) => {
           return (
             <ArticleCard article={item} key={`${item.created_date}-${key}`} />
           );
         })}
-      </Container>
+      </WebContainer>
     );
   }
 
+  // todo: add loading screen
   return null;
 };
