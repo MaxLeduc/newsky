@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text as TextComponent, Platform} from 'react-native';
+import {Text as TextComponent} from 'react-native';
 import styled from 'styled-components/native';
 
 interface props {
