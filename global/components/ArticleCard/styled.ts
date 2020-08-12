@@ -1,12 +1,21 @@
 import {View, Text, Image} from 'react-native';
 import Styled from 'styled-components/native';
 
-export const ArticleContainer = Styled(View)`
+interface ArticleContainerProps {
+  isMobile: boolean;
+}
+
+export const ArticleContainer = Styled(View)<ArticleContainerProps>`
   margin-top: 7px;
   margin-bottom: 8px;
-  max-width: 300px;
   background-color: #fafafa;
   border-radius: 3px;
+
+  ${({isMobile}) =>
+    !isMobile &&
+    `
+    max-width: 300px;
+  `}
 `;
 
 export const ImageContainer = Styled(View)`
