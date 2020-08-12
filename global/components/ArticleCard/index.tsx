@@ -48,7 +48,7 @@ export const SectionBackground = Styled(View)`
   opacity: 0.8;
 `;
 
-export const SectionText = Styled(View)`
+export const SectionText = Styled(Text)`
   ${sectionSharedStyles}
   line-height: 0;
 `;
