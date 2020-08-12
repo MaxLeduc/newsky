@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text, Image} from 'react-native';
 import Styled from 'styled-components/native';
 import find from 'lodash/find';
-import dateFormat from 'dateFormat';
+import {format} from 'date-fns';
 
 import {Article} from '@newsky/data/news';
 
@@ -11,11 +11,11 @@ interface prop {
 }
 
 export const ArticleContainer = Styled(View)`
-  margin-top: 7pt;
-  margin-bottom: 8pt;
-  max-width: 200pt;
+  margin-top: 7px;
+  margin-bottom: 8px;
+  max-width: 300px;
   background-color: #fafafa;
-  border-radius: 3pt;
+  border-radius: 3px;
 `;
 
 export const ImageContainer = Styled(View)`
@@ -25,21 +25,21 @@ export const ImageContainer = Styled(View)`
 `;
 
 export const StyledImage = Styled(Image)`
-  height: 100pt;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  height: 175px;
   width: 100%;
-  border-top-left-radius: 3pt;
-  border-top-right-radius: 3pt;
 `;
 
 const sectionSharedStyles = `
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 25pt;
-  width: 50pt;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 25px;
+  width: 50px;
 `;
 
 export const SectionBackground = Styled(View)`
@@ -54,23 +54,26 @@ export const SectionText = Styled(Text)`
 `;
 
 export const MainContentContainer = Styled(View)`
-  padding: 10pt;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
 `;
 
 export const StyledDate = Styled(Text)`
-  font-size: 10pt;
   font-weight: bold;
-  margin-bottom: 4pt;
+  font-size: 15px;
+  margin-bottom: 7px;
 `;
 
 export const Title = Styled(Text)`
-  font-size: 13pt;
-  margin-bottom: 4pt;
+  margin-bottom: 7px;
+  font-size: 25px;
 `;
 
 export const Abstract = Styled(Text)`
+  font-size: 17px;
   font-style: italic;
-  font-size: 10pt
 `;
 
 export const ArticleCard = ({article}: prop) => {
@@ -86,7 +89,9 @@ export const ArticleCard = ({article}: prop) => {
         <SectionText>{section.toUpperCase()}</SectionText>
       </ImageContainer>
       <MainContentContainer>
-        <StyledDate>{dateFormat(published_date, 'mmmm d, yyyy')}</StyledDate>
+        <StyledDate>
+          {format(new Date(published_date), 'MMMM do, yyyy')}
+        </StyledDate>
         <Title>{title}</Title>
         {Boolean(abstract) && <Abstract>{abstract}</Abstract>}
       </MainContentContainer>
