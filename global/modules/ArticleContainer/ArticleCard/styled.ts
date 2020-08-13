@@ -2,6 +2,7 @@ import {View, Image, Platform} from 'react-native';
 import styled from 'styled-components/native';
 
 import {Text} from '@newsky/components/Text';
+import {colors} from '@newsky/constants';
 
 interface ArticleContainerProps {
   isMobile: boolean;
@@ -9,7 +10,7 @@ interface ArticleContainerProps {
 
 export const ArticleContainer = styled(View)<ArticleContainerProps>`
   margin-bottom: 30px;
-  background-color: #f8f8f8;
+  background-color: ${colors.lightGrey};
   border-radius: 3px;
 
   ${({isMobile}) =>
@@ -47,7 +48,7 @@ const sectionSharedStyles = `
 
 export const SectionBackground = styled(View)`
   ${sectionSharedStyles}
-  background-color: #fafafa;
+  background-color: ${colors.lighterGrey};
   opacity: 0.8;
 `;
 
@@ -78,5 +79,5 @@ export const Abstract = styled(Text)`
   font-size: 17px;
   font-style: italic;
   font-weight: 300;
-  color: #585858;
+  color: ${colors.grey};
 `;

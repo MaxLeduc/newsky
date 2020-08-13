@@ -6,6 +6,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {NewsProvider} from '@newsky/data/news';
 import {ArticlesContainer} from '@newsky/modules/ArticleContainer';
 import {BackButton} from '@newsky/components/BackButton';
+import {colors} from '@newsky/constants';
 
 const Stack = createStackNavigator();
 
@@ -32,7 +33,7 @@ const App = () => {
             component={ArticlesContainer}
             options={{
               title: 'Newsky',
-              headerStyle: {backgroundColor: '#3a7ebf'},
+              headerStyle: {backgroundColor: colors.primary},
               headerTintColor: 'white',
               headerTitleStyle: {
                 alignSelf: 'center',
@@ -43,7 +44,7 @@ const App = () => {
             name={'Article'}
             component={Article}
             options={{
-              headerStyle: {backgroundColor: '#3a7ebf'},
+              headerStyle: {backgroundColor: colors.primary},
               headerTintColor: 'white',
               headerLeft: ({onPress}) => <BackButton onPress={onPress} />,
               headerTitle: 'Article Details',
