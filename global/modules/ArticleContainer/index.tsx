@@ -10,7 +10,7 @@ interface props {
   navigation: any;
 }
 
-export const ArticlesContainer = ({navigation}: props) => {
+export const ArticleContainer = ({navigation}: props) => {
   const news = useNewsContext();
 
   if (news) {

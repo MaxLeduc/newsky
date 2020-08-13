@@ -48,7 +48,28 @@ module.exports = {
   },
   devtool: 'source-map',
   module: {
-    rules: [babelLoaderConfiguration],
+    rules: [
+      babelLoaderConfiguration,
+      {
+        test: /\.(png|jpe?g|gif)$/,
+        options: {
+          name: 'static/media/[name].[hash:8].[ext]',
+          // publicPath: 'https://cdn.example.com/', // uncomment to override webpack public path
+          // esModule: true
+          scalings: {'@2x': 2, '@3x': 3},
+        },
+        loader: 'react-native-web-image-loader',
+      },
+      {
+        test: /postMock.html$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+          },
+        },
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -73,6 +94,7 @@ module.exports = {
     ],
     alias: {
       'react-native$': 'react-native-web',
+      'react-native-webview': 'react-native-web-webview',
     },
   },
 };
