@@ -15,6 +15,7 @@ export interface Article {
   title: string;
   created_date: string;
   multimedia: Media[];
+  url: string;
 }
 
 export interface NewsPayload {

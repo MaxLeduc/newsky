@@ -6,12 +6,16 @@ import {ArticleCard} from './ArticleCard';
 
 import {StyledSafeAreaView} from './styled';
 
-export const ArticlesContainer = () => {
+interface props {
+  navigation: any;
+}
+
+export const ArticlesContainer = ({navigation}: props) => {
   const news = useNewsContext();
 
   if (news) {
     const renderItem = ({item}: {item: Article}) => (
-      <ArticleCard article={item} />
+      <ArticleCard article={item} navigation={navigation} />
     );
 
     // todo: might have to move the `SafeAreaView` higher
