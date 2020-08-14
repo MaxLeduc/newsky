@@ -1,5 +1,6 @@
 import React from 'react';
 import find from 'lodash/find';
+import last from 'lodash/last';
 import {format} from 'date-fns';
 import {Pressable} from 'react-native';
 
@@ -24,17 +25,10 @@ interface prop {
 }
 
 export const ArticleCard = ({article, navigation}: prop) => {
-  const {
-    multimedia,
-    title,
-    abstract,
-    section,
-    published_date,
-    url: article_url,
-  } = article;
+  const {multimedia, title, abstract, section, published_date, uri} = article;
+  const id = last(uri.split('/'));
   const {url} = find(multimedia, (img) => img.format === 'superJumbo') || {};
 
-  // todo: add some linking to the article.
   return (
     <ArticleContainer isMobile={isMobile()}>
       <ImageContainer>
@@ -47,7 +41,7 @@ export const ArticleCard = ({article, navigation}: prop) => {
           text={format(new Date(published_date), 'MMMM do, yyyy')}
           isHeader
         />
-        <Pressable onPress={() => navigation.push('Article', {article_url})}>
+        <Pressable onPress={() => navigation.push('Article', {id})}>
           <Title text={title} isHeader />
         </Pressable>
         {Boolean(abstract) && <Abstract text={abstract} />}

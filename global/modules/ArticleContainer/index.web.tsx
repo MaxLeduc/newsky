@@ -6,7 +6,11 @@ import {isMobile} from '@newsky/utilities';
 
 import {WebContainer} from './styled';
 
-export const ArticlesContainer = () => {
+interface props {
+  navigation: any;
+}
+
+export const ArticleContainer = ({navigation}: props) => {
   const news = useNewsContext();
 
   if (news) {
@@ -14,7 +18,11 @@ export const ArticlesContainer = () => {
       <WebContainer isMobile={isMobile()}>
         {news.results.map((item: Article, key: number) => {
           return (
-            <ArticleCard article={item} key={`${item.created_date}-${key}`} />
+            <ArticleCard
+              article={item}
+              navigation={navigation}
+              key={`${item.created_date}-${key}`}
+            />
           );
         })}
       </WebContainer>
