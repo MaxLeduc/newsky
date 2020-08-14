@@ -10,6 +10,7 @@ export const WebContainer = styled(View)<ContainerProps>`
   margin-right: 5%;
   display: flex;
   align-items: center;
+  padding-top: 30px;
 
   ${({isMobile}) =>
     !isMobile &&

@@ -1,12 +1,18 @@
 import React from 'react';
+import {Pressable} from 'react-native';
 
 import {Container, Title} from './styled';
 
-export const Header = () => {
-  // todo: add link to home when clicking on the title
+interface props {
+  navigation?: any;
+}
+
+export const Header = ({navigation}: props) => {
   return (
     <Container>
-      <Title>Newsky</Title>
+      <Pressable onPress={() => navigation && navigation.navigate('Home')}>
+        <Title isLink={Boolean(navigation)}>The Newsky</Title>
+      </Pressable>
     </Container>
   );
 };

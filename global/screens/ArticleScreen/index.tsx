@@ -12,6 +12,7 @@ interface ArticleScreenProps {
       id: string;
     };
   };
+  navigation: any;
 }
 
 const getArticleById = (news: NewsPayload | null, id: string) => {
@@ -22,7 +23,7 @@ const getArticleById = (news: NewsPayload | null, id: string) => {
   return null;
 };
 
-const ArticleScreen = ({route}: ArticleScreenProps) => {
+const ArticleScreen = ({route, navigation}: ArticleScreenProps) => {
   const {params} = route;
   const news = useNewsContext();
   const currentArticle = getArticleById(news, params.id);
@@ -31,7 +32,7 @@ const ArticleScreen = ({route}: ArticleScreenProps) => {
   if (currentArticle) {
     return (
       <>
-        {isWeb && <Header />}
+        {isWeb && <Header navigation={navigation} />}
         <WebView
           style={isWeb && styles.webview}
           source={{uri: currentArticle.url}}
