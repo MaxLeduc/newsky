@@ -19,7 +19,7 @@ const App = () => {
             name={'Home'}
             component={ArticleContainer}
             options={{
-              title: 'Newsky',
+              title: 'The Newsky',
               headerStyle: {backgroundColor: colors.primary},
               headerTintColor: 'white',
               headerTitleStyle: {

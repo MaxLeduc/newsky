@@ -41,7 +41,7 @@ export const ArticleCard = ({article, navigation}: prop) => {
           text={format(new Date(published_date), 'MMMM do, yyyy')}
           isHeader
         />
-        <Pressable onPress={() => navigation.push('Article', {id})}>
+        <Pressable onPress={() => navigation.navigate('Article', {id})}>
           <Title text={title} isHeader />
         </Pressable>
         {Boolean(abstract) && <Abstract text={abstract} />}
