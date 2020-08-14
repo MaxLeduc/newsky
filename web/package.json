@@ -1,0 +1,7 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "dependencies": {
+    "react-native-web-image-loader": "^0.1.1"
+  }
+}
